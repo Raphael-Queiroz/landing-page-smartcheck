@@ -21,7 +21,7 @@ export const SocialProof: React.FC = () => {
                 </div>
             </div>
             <span className="text-xs text-blue-100/70 font-light">
-                Joined by <span className="font-semibold text-white">12,000+</span> pilots worldwide
+                Joined by <span className="font-semibold text-white">12,000+</span> technician worldwide
             </span>
         </div>
     );

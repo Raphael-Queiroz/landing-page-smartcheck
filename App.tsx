@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { LoginCard } from './components/LoginCard';
 import { HeroButtons } from './components/HeroButtons';
+import { SocialProof } from './components/SocialProof';
 import { Footer } from './components/Footer';
 
 // Use a high-quality Unsplash image that matches the "Sunset above clouds with wing" vibe
@@ -41,19 +42,20 @@ export default function App() {
                         
                         <span className="whitespace-nowrap">
                             ANAC{' '}
-                            {/* Blue gradient and glow effect matching the button style */}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-500 to-blue-600 drop-shadow-[0_0_20px_rgba(96,165,250,0.6)]">
+                            {/* Matching the color/glow of HeroButtons: text-blue-400 (like bg-blue-400) and specific shadow */}
+                            <span className="text-blue-400 drop-shadow-[0_0_20px_rgba(96,165,250,0.6)]">
                                 começa aqui.
                             </span>
                         </span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-xl mx-auto lg:mx-0 drop-shadow-md pt-2">
-                        Plataforma completa de treinamento CHT para Célula, GMP e Aviônicos, criada por profissionais da aviação, com foco total na sua aprovação.
+                        Plataforma completa de treinamento para o seu check de CHT dos módulos Célula, GMP e Aviônicos, criada por profissionais que vivem da aviação.
                     </p>
                     
-                    <div className="hidden lg:block pt-6">
+                    <div className="hidden lg:flex flex-col gap-8 pt-6">
                         <HeroButtons />
+                        <SocialProof />
                     </div>
                 </div>
 
@@ -62,9 +64,10 @@ export default function App() {
                     <LoginCard />
                 </div>
 
-                {/* Mobile only Buttons */}
-                <div className="lg:hidden">
+                {/* Mobile only Buttons & Social Proof */}
+                <div className="lg:hidden flex flex-col items-center gap-6">
                      <HeroButtons />
+                     <SocialProof />
                 </div>
             </div>
 

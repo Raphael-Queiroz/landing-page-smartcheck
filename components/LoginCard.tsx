@@ -13,7 +13,7 @@ export const LoginCard: React.FC = () => {
         {/* Removed top accent line gradient */}
 
         <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">Bem Vindo a Comunidade SmartCheck</h2>
+            <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">Bem Vindo a SmartCheck</h2>
             <p className="text-slate-300 text-sm">Entre para continuar o treinamento.</p>
         </div>
 
@@ -27,7 +27,7 @@ export const LoginCard: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full px-5 py-3.5 rounded-lg text-sm transition-all duration-300 bg-black/20 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400/50 focus:bg-black/30"
+                    className="w-full px-5 py-3.5 rounded-lg text-sm transition-all duration-300 bg-black/20 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400 focus:bg-black/40 focus:scale-[1.02] focus:shadow-[0_0_15px_rgba(96,165,250,0.2)]"
                 />
             </div>
 
@@ -41,7 +41,7 @@ export const LoginCard: React.FC = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder="••••••••"
-                        className="w-full px-5 py-3.5 rounded-lg text-sm transition-all duration-300 bg-black/20 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400/50 focus:bg-black/30 tracking-widest"
+                        className="w-full px-5 py-3.5 rounded-lg text-sm transition-all duration-300 bg-black/20 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400 focus:bg-black/40 focus:scale-[1.02] focus:shadow-[0_0_15px_rgba(96,165,250,0.2)] tracking-widest"
                     />
                     <button 
                         type="button"
@@ -73,7 +73,7 @@ export const LoginCard: React.FC = () => {
 
             <button 
                 type="submit"
-                className="w-full bg-blue-400/70 hover:bg-blue-400/90 text-white py-3.5 rounded-lg font-bold text-sm transform transition-all duration-300 shadow-lg shadow-blue-400/20 border border-blue-300/30 backdrop-blur-md"
+                className="w-full bg-blue-400/70 hover:bg-blue-400/90 text-white py-3.5 rounded-lg font-bold text-sm transform transition-all duration-300 shadow-lg shadow-blue-400/20 border border-blue-300/30 backdrop-blur-md hover:scale-[1.02]"
             >
                 Continue My Journey
             </button>
